@@ -101,7 +101,7 @@ WHOIS や RDAP により参照することができる．
 また [MAXMIND社](https://www.maxmind.com/) は，
 GeoIP サービスを提供しており，
 そのうち GeoLite データベースに関しては，
-現在でも free で利用できる^[事前にユーザ登録が必要となった]．
+現在でも free で利用できる[^1]．
 以下，
 GeoLite データベースを入手できたとして，
 Python で国情報を出力させるコードを示す．
@@ -114,12 +114,16 @@ response = reader.country('3.166.244.101')
 print(response.country.iso_code)
 ```
 
-実行結果は以下の通り^[kantei.go.jp の IP であるが AWS 上にあるため米国(US)となった]．
+実行結果は以下の通り[^2]．
 
 ```sh-session
 $ python3 ./geotest.py
 US
 ```
+
+[^1]: kantei.go.jp の IP であるが AWS 上にあるため米国(US)となった
+[^2]: 事前にユーザ登録が必要となった
+
 
 ### SPFから送信元IPの取得
 
