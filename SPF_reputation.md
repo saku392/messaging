@@ -52,6 +52,9 @@ portal に login できるようになり，
 DQS (Data Query Service) key が生成できるようになる．
 
 spamhaus の DNSBL の利用方法を以下に示す．
+対象とするIPアドレスは，
+1 octet 単位で逆向きに指定する．
+つまり IP アドレス "73.97.249.63" を調べる場合は以下のようになる．
 現状では，
 まだ従来のアクセス方法 (spamhaus.org ドメイン名の利用) も可能なようである．
 
